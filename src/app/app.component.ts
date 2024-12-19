@@ -1,26 +1,21 @@
 import { Component, inject, OnInit } from '@angular/core';
-import {
-  NavigationEnd,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-} from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { ResumeComponent } from './sections/resume/resume.component';
 import { ContactComponent } from './sections/contact/contact.component';
+import { HeaderComponent } from './sections/header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterLink,
-    RouterLinkActive,
     SkillsComponent,
     ProjectsComponent,
     ResumeComponent,
     ContactComponent,
+    HeaderComponent,
   ],
   templateUrl: './app.component.html',
   styles: [],
