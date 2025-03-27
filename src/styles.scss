@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-image: url('../public/code-5113374_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a.active {
+  @apply bg-red-600;
+}

@@ -1,10 +1,25 @@
-<app-header></app-header>
-<main>
+<section>
+  <app-header [activeSection]="activeSection"></app-header>
+</section>
+<main class="p-4 md:p-0 space-y-16 mx-auto max-w-7xl md:pb-16">
+  <section class="py-10 md:py-16">
+    <h1 class="mt-20 font-bold text-5xl md:text-6xl text-center leading-loose">Hi there! I’m Patricio 👋</h1>
+    <!-- <h2 class="font-bold text-5xl text-center">A Backend Developer</h2> -->
+  </section>
+  <section class="max-w-6xl mx-auto text-center">
+    <p class="text-xl md:text-2xl leading-normal">I’m an aspiring backend developer with a passion for solving problems
+      and
+      creating efficient and scalable solutions.
+      I’ve been refining my skills in full-stack development using NestJS, Angular, and TypeORM. Now,
+      I’m looking for my first opportunity in the industry, excited to grow, collaborate with experienced professionals,
+      and contribute to impactful projects.<br>
+      Feel free to check out my projects below or reach out to me.</p>
+    <button
+      class="inline-block mt-6 border focus:ring-4 focus:outline-none font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 border-gray-300 text-gray-300 hover:text-black hover:bg-gray-300 focus:ring-gray-300"
+      (click)="goToSection('projects')">View Projects</button>
+  </section>
   <app-skills></app-skills>
-
   <app-projects></app-projects>
-
   <app-resume></app-resume>
-
   <app-contact></app-contact>
 </main>
