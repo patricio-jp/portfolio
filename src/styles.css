@@ -118,6 +118,13 @@
   * {
     @apply border-border outline-ring/50;
   }
+
+  html {
+    background-image: url('../public/code-5113374_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
