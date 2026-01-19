@@ -120,13 +120,12 @@
   }
 
   html {
-    background-image: url('../public/code-5113374_1920.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(135deg, #1a2634 0%, #2d4a5a 50%, #3a7360 100%);
+    min-height: 100vh;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-transparent text-foreground;
   }
 
   input[type="number"]::-webkit-inner-spin-button,
@@ -139,6 +138,25 @@
     -moz-appearance: textfield;
     appearance: textfield; /* Added for general compatibility */
   }
+}
+
+.landing-section {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.landing-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../public/code-5113374_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  filter: brightness(1.1) contrast(0.9);
+  z-index: -1;
 }
 
 

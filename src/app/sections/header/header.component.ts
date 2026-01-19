@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, computed, input, signal } from '@an
 import { RouterLink } from '@angular/router';
 
 import { ZardIconComponent } from '@/shared/components/icon/icon.component';
+import { GlassCardComponent } from '@/shared/components/glass-card/glass-card.component';
 
 @Component({
     selector: 'app-header',
-    imports: [RouterLink, ZardIconComponent],
+    imports: [RouterLink, ZardIconComponent, GlassCardComponent],
     templateUrl: './header.component.html',
     styles: ``,
     changeDetection: ChangeDetectionStrategy.OnPush,

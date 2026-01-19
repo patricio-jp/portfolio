@@ -8,13 +8,14 @@ import { SkillsComponent } from './sections/skills/skills.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
 import { ResumeComponent } from './sections/resume/resume.component';
 import { ContactComponent } from './sections/contact/contact.component';
+import { GlassCardComponent } from './shared/components/glass-card/glass-card.component';
 import { register } from 'swiper/element/bundle';
 
 register();
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, SkillsComponent, ProjectsComponent, ResumeComponent, ContactComponent],
+  imports: [HeaderComponent, SkillsComponent, ProjectsComponent, ResumeComponent, ContactComponent, GlassCardComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
