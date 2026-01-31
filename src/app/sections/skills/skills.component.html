@@ -1,87 +1,113 @@
 <h2 class="mt-16 mb-4 text-3xl leading-snug font-bold">Coding Skills</h2>
-<swiper-container #skillsSwiper init="false" class="w-full h-full">
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/nestjs.svg" alt="NestJS icon">
-      <span class="font-bold">NestJS</span>
+<h3 class="mt-8 mb-4 text-2xl leading-snug font-bold">Main Focus (Backend)</h3>
+<div class="grid gap-4 md:grid-cols-2">
+  <z-glass-card class="p-4 bg-white/5 border-white/20">
+    <h3 class="text-base font-semibold">Languages</h3>
+    <div class="mt-4 grid grid-cols-3 gap-3">
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/typescript.svg" alt="TypeScript icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">TypeScript</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/c-sharp-icon.svg" alt="C# icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">C#</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/python.svg" alt="Python icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">Python</span>
+      </z-glass-card>
     </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/mysql.svg" alt="MySQL icon">
-      <span class="font-bold">MySQL</span>
+  </z-glass-card>
+
+  <z-glass-card class="p-4 bg-white/5 border-white/20">
+    <h3 class="text-base font-semibold">Backend Frameworks</h3>
+    <div class="mt-4 grid grid-cols-3 gap-3">
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/nestjs.svg" alt="NestJS icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">NestJS</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/dotnet.svg" alt=".NET icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">.NET</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/fastapi.svg" alt="FastAPI icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">FastAPI</span>
+      </z-glass-card>
     </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/angular.svg" alt="Angular icon">
-      <span class="font-bold">Angular</span>
+  </z-glass-card>
+
+  <z-glass-card class="p-4 bg-white/5 border-white/20">
+    <h3 class="text-base font-semibold">Databases</h3>
+    <div class="mt-4 grid grid-cols-3 gap-3">
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/postgresql.svg" alt="PostgreSQL icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">PostgreSQL</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/mysql-icon.svg" alt="MySQL icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">MySQL</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/mongodb-icon.svg" alt="MongoDB icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">MongoDB</span>
+      </z-glass-card>
     </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/ionicframework.svg" alt="Ionic icon">
-      <span class="font-bold">Ionic</span>
+  </z-glass-card>
+
+  <z-glass-card class="p-4 bg-white/5 border-white/20">
+    <h3 class="text-base font-semibold">Data Access</h3>
+    <div class="mt-4 grid grid-cols-3 gap-3">
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/typeorm.svg" alt="TypeORM icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">TypeORM</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/entityframeworkcore.svg" alt="Entity Framework icon" class="h-12 w-12 p-1">
+        <span class="text-sm font-semibold">Entity Framework</span>
+      </z-glass-card>
     </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/typescript.svg" alt="Typescript icon">
-      <span class="font-bold">Typescript</span>
+  </z-glass-card>
+
+  <z-glass-card class="p-4 bg-white/5 border-white/20">
+    <h3 class="text-base font-semibold">Infra & DevOps</h3>
+    <div class="mt-4 grid grid-cols-3 gap-3">
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/docker.svg" alt="Docker icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">Docker</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/git.svg" alt="Git icon" class="h-12 w-12 p-1">
+        <span class="text-sm font-semibold">Git</span>
+      </z-glass-card>
     </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/tailwindcss.svg" alt="TailwindCSS icon">
-      <span class="font-bold">Tailwind CSS</span>
+  </z-glass-card>
+</div>
+<h3 class="mt-8 mb-4 text-2xl leading-snug font-bold">Others (Full-Stack)</h3>
+<div class="grid gap-4 md:grid-cols-2">
+  <z-glass-card class="p-4 bg-white/5 border-white/20 md:col-span-2">
+    <h3 class="text-base font-semibold">Frontend</h3>
+    <div class="mt-4 grid grid-cols-3 gap-3 md:grid-cols-5">
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/angular.svg" alt="Angular icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">Angular</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/tailwindcss.svg" alt="Tailwind CSS icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">Tailwind</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/ionicframework.svg" alt="Ionic icon" class="h-12 w-12 p-1">
+        <span class="text-sm font-semibold">Ionic</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/react.svg" alt="React icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">React</span>
+      </z-glass-card>
+      <z-glass-card class="flex flex-col items-center gap-2 px-3 py-4 text-center bg-white/5 border-white/20 hover:bg-white/10 hover:border-white/30 transition hover:scale-105">
+        <img src="icons/wordpress.svg" alt="Wordpress icon" class="h-12 w-12">
+        <span class="text-sm font-semibold">Wordpress</span>
+      </z-glass-card>
     </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/git.svg" alt="Git icon">
-      <span class="font-bold">Git</span>
-    </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/docker.svg" alt="Docker icon">
-      <span class="font-bold">Docker</span>
-    </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/dotnet.svg" alt="Dotnet icon">
-      <span class="font-bold">.NET</span>
-    </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/wordpress.svg" alt="Wordpress icon">
-      <span class="font-bold">Wordpress</span>
-    </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/javascript.svg" alt="Javascript icon">
-      <span class="font-bold">Javascript</span>
-    </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/php.svg" alt="PHP icon">
-      <span class="font-bold">PHP</span>
-    </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/html5.svg" alt="HTML icon">
-      <span class="font-bold">HTML</span>
-    </div>
-  </swiper-slide>
-  <swiper-slide class="block h-full w-full">
-    <div class="p-4 flex flex-col items-center justify-center space-y-3">
-      <img src="icons/css.svg" alt="CSS icon">
-      <span class="font-bold">CSS</span>
-    </div>
-  </swiper-slide>
-</swiper-container>
+  </z-glass-card>
+</div>
