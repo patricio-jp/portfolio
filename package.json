@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:gh": "ng build --configuration production --base-href /portfolio/",
+    "deploy:gh": "npm run build:gh && npx angular-cli-ghpages --dir dist/portfolio"
   },
   "prettier": {
     "printWidth": 100,
@@ -21,6 +23,7 @@
     ]
   },
   "private": true,
+  "homepage": "https://patricio-jp.github.io/portfolio",
   "packageManager": "npm@11.6.0",
   "dependencies": {
     "@angular/animations": "^21.0.6",
@@ -44,6 +47,7 @@
     "@angular/cli": "^21.0.1",
     "@angular/compiler-cli": "^21.0.0",
     "@tailwindcss/postcss": "^4.1.12",
+    "angular-cli-ghpages": "^2.0.3",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.12",
