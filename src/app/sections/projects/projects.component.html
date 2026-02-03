@@ -3,8 +3,12 @@
   @for (project of projects; track $index) {
   <z-glass-card
     class="border flex flex-col rounded-lg shadow-sm md:hover:scale-105 md:transition-transform md:duration-75">
-    <img class="rounded-t-lg max-h-52 object-cover" [src]="project.imageUrl"
-      [alt]="project.imageAlt ? project.imageAlt : ''" />
+    <img
+      class="rounded-t-lg max-h-52 object-cover"
+      [ngSrc]="project.imageUrl"
+      [alt]="project.imageAlt ? project.imageAlt : ''"
+      width="640"
+      height="320" />
     <div class="p-5 grow flex flex-col justify-between">
       <section>
         <div>
