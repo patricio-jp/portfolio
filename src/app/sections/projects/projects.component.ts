@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { ZardIconComponent } from '@/shared/components/icon/icon.component';
+import { GlassCardComponent } from '@/shared/components/glass-card/glass-card.component';
 
 interface TechnologyBadge {
   title: string;
@@ -28,7 +29,7 @@ interface Project {
 
 @Component({
     selector: 'app-projects',
-    imports: [ZardIconComponent],
+    imports: [ZardIconComponent, GlassCardComponent],
     templateUrl: './projects.component.html',
     styles: ``,
     changeDetection: ChangeDetectionStrategy.OnPush
@@ -40,7 +41,7 @@ export class ProjectsComponent {
       description:
         'Credit and payment management system for JyC Amoblamientos customers. Backend developed using NestJS and TypeORM in TypeScript, with MySQL as the database. Provides a secure and efficient REST API to manage customers, transactions, and reports.',
       deployDescription: 'Hosted on an Oracle Cloud VM instance using Docker.',
-      imageUrl: '/portfolio/jyc-diagram.png',
+      imageUrl: '/projects/jyc-diagram.png',
       technologies: [
         {
           title: 'NestJS',
@@ -77,7 +78,7 @@ export class ProjectsComponent {
       description:
         'Web and mobile application for managing JyC Amoblamientos customers and payments. Built with Angular + Ionic for cross-platform compatibility, styled with TailwindCSS for a modern and responsive UI.',
       deployDescription: 'Hosted on an Oracle Cloud VM instance using Docker.',
-      imageUrl: '/portfolio/jyc-frontend.png',
+      imageUrl: '/projects/jyc-frontend.png',
       technologies: [
         {
           title: 'Angular',
@@ -119,7 +120,7 @@ export class ProjectsComponent {
       title: 'ISM Wordpress Theme',
       description:
         'Custom WordPress theme designed for an educational institution. Developed using PHP and HTML as the core structure, with TailwindCSS for a modern and adaptive design.',
-      imageUrl: '/portfolio/ism-theme.png',
+      imageUrl: '/projects/ism-theme.png',
       technologies: [
         {
           title: 'PHP',
