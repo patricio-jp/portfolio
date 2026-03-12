@@ -1,14 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { ZardIconComponent } from '@/shared/components/icon/icon.component';
-import { ZardButtonComponent } from '@/shared/components/button/button.component';
 
 @Component({
-    selector: 'app-contact',
-    imports: [ZardIconComponent, ZardButtonComponent],
-    templateUrl: './contact.component.html',
-    styles: ``,
-    changeDetection: ChangeDetectionStrategy.OnPush
+  selector: 'app-contact',
+  imports: [ZardIconComponent],
+  templateUrl: './contact.component.html',
+  styles: ``,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {
   protected readonly githubIcon = 'github';
