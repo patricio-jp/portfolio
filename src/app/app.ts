@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, inject, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  DestroyRef,
+  OnInit,
+  inject,
+  signal,
+} from '@angular/core';
 import { Location } from '@angular/common';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
@@ -10,18 +17,27 @@ import { ResumeComponent } from './sections/resume/resume.component';
 import { ContactComponent } from './sections/contact/contact.component';
 import { GlassCardComponent } from './shared/components/glass-card/glass-card.component';
 import { register } from 'swiper/element/bundle';
+import { TrackSectionDirective } from './shared/core/directives/track-section.directive';
 
 register();
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, SkillsComponent, ProjectsComponent, ResumeComponent, ContactComponent, GlassCardComponent],
+  imports: [
+    HeaderComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ResumeComponent,
+    ContactComponent,
+    GlassCardComponent,
+    TrackSectionDirective,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
-    '(window:scroll)': 'onWindowScroll()'
-  }
+    '(window:scroll)': 'onWindowScroll()',
+  },
 })
 export class App implements OnInit {
   private readonly router = inject(Router);
@@ -44,7 +60,7 @@ export class App implements OnInit {
     this.router.events
       .pipe(
         filter((event): event is NavigationEnd => event instanceof NavigationEnd),
-        takeUntilDestroyed(this.destroyRef)
+        takeUntilDestroyed(this.destroyRef),
       )
       .subscribe(() => {
         this.isNavigating.set(true);
